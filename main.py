@@ -40,19 +40,19 @@ def compare(user_score, computer_score):
     """Pass in both the user's score and the computer's score as arguments"""
     # if/elif/else statements for each outcome
     if user_score == computer_score:
-        return 'Draw'
+        return 'Draw Game'
     elif computer_score == 0:
-        return "Lose, opponent has Blackjack"
+        return "You lost, Skippery Pete has Blackjack  🤠"
     elif user_score == 0:
-        return "Win with blackjack! WOOOOO!"
+        return "You win with Blackjack! WOOOOO! ♠️ "
     elif user_score > 21:
-        return "you went over. You lose :("
+        return "You went over. You lose 😕"
     elif computer_score > 21:
-        return "you Win. opponent busted :):nose:"
+        return "you Win. Slippery Pete busted 💥"
     elif user_score > computer_score:
-        return "You win! :blush:"
+        return "You win! 🤭"
     else:
-        return "You LOSE BOOOOOOO"
+        return "You LOSE BOOOOOOO 👎🏻"
 # Create game function
 def play_game():
     """This function will be run so the game begins"""
@@ -95,8 +95,8 @@ def play_game():
         computer_score = calculate_score(computer_cards)
     
     # Have print statements and f strings that print out the users score and computer score
-    print(f"Your final hand: {user_cards}, your final score {user_score}" )
-    print(f"Computers final hand: {computer_cards}, Computer score {computer_score}")
+    print(f"Your final hand: {user_cards}, Your final score {user_score}" )
+    print(f"Slippery Pete's final hand: {computer_cards}, Pete's score {computer_score}")
 
     print(compare(user_score, computer_score))
 
